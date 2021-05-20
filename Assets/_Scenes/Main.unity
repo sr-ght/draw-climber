@@ -539,7 +539,6 @@ MonoBehaviour:
   _currentLevelInd: 0
   _levels:
   - {fileID: 125185416}
-  - {fileID: 1859527092}
   _climber: {fileID: 1612301876}
 --- !u!1 &125185414
 GameObject:
@@ -2723,7 +2722,7 @@ VideoPlayer:
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
-  - {fileID: 684214843}
+  - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
   m_Url: 
@@ -8553,7 +8552,7 @@ VideoPlayer:
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
-  - {fileID: 684214843}
+  - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
   m_Url: 
