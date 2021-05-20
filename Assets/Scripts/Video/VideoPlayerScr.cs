@@ -21,8 +21,8 @@ public class VideoPlayerScr : MonoBehaviour
         TimeScr.OnChangeTimeScale += TimeScr_OnChangeTimeScale;
         VideoPlayer.started += Started;
         VideoPlayer.loopPointReached += EndReached;
-        RawImage.material = Instantiate(RawImage.material);
-        RawImage.enabled = false;
+        //RawImage.material = Instantiate(RawImage.material);
+        //RawImage.enabled = false;
     }
 
     private void OnDestroy()
@@ -39,12 +39,12 @@ public class VideoPlayerScr : MonoBehaviour
 
     private void Started(VideoPlayer vp)
     {
-        _rawImage.enabled = true;
+        //_rawImage.enabled = true;
     }
 
     private void EndReached(VideoPlayer vp)
     {
-        _rawImage.enabled = false;
+        //_rawImage.enabled = false;
         vp.frame = 0;
     }
 
@@ -57,9 +57,9 @@ public class VideoPlayerScr : MonoBehaviour
     {
         VideoPlayer.Stop();
         VideoPlayer.clip = videoChromaKey.VideoClip;
-        RawImage.material.SetColor(Constants.SHADER_KeyColor, videoChromaKey.KeyColor);
-        RawImage.material.SetFloat(Constants.SHADER_DChroma, videoChromaKey.DChroma);
-        RawImage.material.SetFloat(Constants.SHADER_DChromaT, videoChromaKey.DChromaTolerance);
+        //RawImage.material.SetColor(Constants.SHADER_KeyColor, videoChromaKey.KeyColor);
+        //RawImage.material.SetFloat(Constants.SHADER_DChroma, videoChromaKey.DChroma);
+        //RawImage.material.SetFloat(Constants.SHADER_DChromaT, videoChromaKey.DChromaTolerance);
         VideoPlayer.Prepare();
         if (delay > 0f)
         {
